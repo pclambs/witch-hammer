@@ -1,8 +1,13 @@
+import React from 'react'
+import { Html } from '@react-three/drei'
+
 const AccountPage = () => {
   return (
-    <div className="container">
+    <Html>
+      <div className="container">
         <h1>Account Page</h1>
-    </div>
+      </div>
+    </Html>
   )
 }
 

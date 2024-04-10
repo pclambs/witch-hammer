@@ -1,12 +1,11 @@
 // pages/MusicPage.jsx
-import React from 'react';
-import { Canvas } from '@react-three/fiber';
-import StreamLink from '../components/StreamLink';
-import spotifyLogo from '../assets/icons/spotify.svg'; // Ensure this path is correct
+import React from 'react'
+import StreamLink from '../components/StreamLink'
+import spotifyLogo from '../assets/icons/spotify.svg'
 
 const MusicPage = () => {
   return (
-    <Canvas>
+    <>
       {/* ... your other 3D objects ... */}
       <StreamLink
         logo={spotifyLogo}
@@ -14,8 +13,8 @@ const MusicPage = () => {
         serviceName="Spotify"
       />
       {/* You can add other StreamLink components or 3D objects here */}
-    </Canvas>
-  );
-};
+    </>
+  )
+}
 
-export default MusicPage;
+export default MusicPage
