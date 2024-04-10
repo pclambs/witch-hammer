@@ -12,33 +12,33 @@ import VideosPage from '../pages/VideosPage'
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/*",
     element: <App />,
-    errorElement: <Error />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
         element: <HomePage />
       }, {
-        path: '/music',
+        path: 'music',
         element: <MusicPage />
       }, {
-        path: '/store',
+        path: 'store',
         element: <StorePage />
       }, {
-        path: '/videos',
+        path: 'videos',
         element: <VideosPage />
       }, {
-        path: '/shows', 
+        path: 'shows', 
         element: <ShowsPage />
       }, {
-        path: '/coven',
+        path: 'coven',
         element: <CovenPage />
       }, {
-        path: '/login',
+        path: 'login',
         element: <LoginPage />
       }, {
-        path: '/account',
+        path: 'account',
         element: <AccountPage />
       }
     ]
