@@ -1,6 +1,6 @@
 // components/StreamLink.jsx
-import React from 'react';
-import { Html } from '@react-three/drei';
+import React from 'react'
+import { Html } from '@react-three/drei'
 
 const StreamLink = ({ logo, url, serviceName }) => {
   return (
@@ -12,7 +12,7 @@ const StreamLink = ({ logo, url, serviceName }) => {
         </a>
       </div>
     </Html>
-  );
-};
+  )
+}
 
-export default StreamLink;
+export default StreamLink

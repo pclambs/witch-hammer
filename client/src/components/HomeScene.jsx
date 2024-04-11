@@ -8,9 +8,8 @@ const HomeScene = () => {
       color="black" // Default color
       anchorX="center" // Horizontal anchor alignment
       anchorY="middle" // Vertical anchor alignment
-    >
-      home scene
-    </Text>
+      text="home scene"
+    />
   )
 }
 

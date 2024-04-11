@@ -1,17 +1,17 @@
 // SceneContext.jsx
-import React, { createContext, useState, useContext } from 'react'
+import React, { createContext, useState, useContext, useCallback } from 'react'
 
 const SceneContext = createContext({
   currentScene: null, // Initial state can be null or a default component
-  changeScene: () => {}, // Placeholder for changing the scene
-});
+  changeScene: () => {}, // Placeholder function
+})
 
 export const SceneProvider = ({ children }) => {
   const [currentScene, setCurrentScene] = useState(null) // Initial state is null
 
-  const changeScene = (scene) => {
+  const changeScene = useCallback((scene) => {
     setCurrentScene(scene) // Update the current scene
-  }
+  }, []) // Empty dependency array means this function never changes
 
   return (
     <SceneContext.Provider value={{ currentScene, changeScene }}>
