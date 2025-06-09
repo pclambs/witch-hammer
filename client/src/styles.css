@@ -148,6 +148,7 @@ nav a {
 	font-size: 5rem;
 	word-spacing: -1rem;
 	line-height: 6rem;
+	transition: all .3s ease;
 	color: var(--color1);
 }
 

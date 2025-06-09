@@ -1,4 +1,4 @@
-// SceneContext.jsx
+// /providers/SceneContext.jsx
 import React, { createContext, useState, useContext, useCallback } from 'react'
 
 const SceneContext = createContext({

@@ -6,7 +6,6 @@ const Shows = () => {
     <Html>
       <div className="container">
         <h1>Shows</h1>
-
       </div>
     </Html>
   )

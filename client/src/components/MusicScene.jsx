@@ -2,15 +2,15 @@
 import React from 'react'
 import { Text } from '@react-three/drei'
 
-const HomeScene = () => {
+const MusicScene = () => {
   return (
     <Text
       color="black" // Default color
       anchorX="center" // Horizontal anchor alignment
       anchorY="middle" // Vertical anchor alignment
-      text="home"
+      text="music"
     />
   )
 }
 
-export default HomeScene
+export default MusicScene
